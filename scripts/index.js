@@ -1,8 +1,9 @@
 function showContactForm(){
-    var view = document.getElementById("contact-form").getAttribute('display'); //mistake? getComputedStyle
-    //var view = getComputedStyle(document.getElementById("contact-form")).display;
+    //var view = document.getElementById("contact-form").getAttribute('display'); //mistake? getComputedStyle
+    var view = getComputedStyle(document.getElementById("contact-form")).display;
     document.getElementById("contact-form").style.display = (view === "none" ? "block": "none");
-
+	//prints in js are done with console.log();
+	console.log("broken");
 }
 
 
